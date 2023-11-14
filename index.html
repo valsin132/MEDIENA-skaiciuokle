@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediena</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header class="block-med">
+        <h1>Medienos kainos ir kubų skaičiuoklė</h1>
+    </header>
+    <div class="block-med">
+        <h2>PASIRINKITE IŠMATAVIMUS:</h2>
+        <div class="flex-container">
+            <div class="parametras">
+                <img class="pirma" src="img/storis.jpg" alt="lenta">
+                <p>Storis:</p>
+                <select id="storio-pasirinkimas">
+                    <option value="25">25mm</option>
+                    <option value="30">30mm</option>
+                    <option value="50">50mm</option>
+                    <option value="100">100mm</option>
+                </select>
+            </div>
+            <div class="parametras">
+                <img src="img/plotis.jpg" alt="lenta">
+                <p>Plotis:</p>
+                <select id="plocio-pasirinkimas">
+                    <option value="50">50mm</option>
+                    <option value="100">100mm</option>
+                    <option value="120">120mm</option>
+                    <option value="150">150mm</option>
+                </select>
+            </div>
+            <div class="parametras">
+                <img src="img/ilgis.jpg" alt="lenta">
+                <p>Ilgis:</p>
+                <select id="ilgio-pasirinkimas">
+                    <option value="3000">3000mm</option>
+                    <option value="6000">6000mm</option>
+                </select>
+            </div>
+        </div>
+        <p class="kiekis">PASIRINKITE LENTŲ KIEKĮ:</p>
+        <input type="number" min="1" id="skaicius-lentu">
+        <button id="calculate">Skaičiuoti</button>
+        <button id="reset">Išvalyti</button>
+    </div>
+    <div class="block-med">
+        <h2>Suvestinė</h2>
+        <div id="results">
+            <p>Kol kas nieko nepasirinkta.</p>
+        </div>
+    </div>
+    
+</body>
+</html>
